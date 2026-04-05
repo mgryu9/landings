@@ -96,6 +96,31 @@ export async function POST(request: NextRequest) {
         description: "추천 코드 나누고 보상 두 배로",
         color: "#16a34a",
       },
+      stylist: {
+        name: "핸즈 (Handz)",
+        description: "미용사 개인 검색 & 팔로우 플랫폼",
+        color: "#f43f5e",
+      },
+      salary: {
+        name: "연봉핏",
+        description: "이직 연봉 협상 도우미",
+        color: "#2563eb",
+      },
+      reviewbot: {
+        name: "리뷰봇",
+        description: "소상공인 리뷰 통합 관리 서비스",
+        color: "#f97316",
+      },
+      meetingai: {
+        name: "미팅AI",
+        description: "회의록 액션아이템 자동 추출 서비스",
+        color: "#7c3aed",
+      },
+      apartment: {
+        name: "청약핏",
+        description: "청약 당첨 전략 커뮤니티",
+        color: "#059669",
+      },
     };
 
     const config = projectConfig[project] ?? {
