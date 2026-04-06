@@ -27,7 +27,7 @@ export default async function StylistPage() {
 
   return (
     <main>
-      <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID!} />
+      <MetaPixel pixelId="1523494972728904" />
       <Analytics />
       <HeroSection waitlistCount={waitlistCount} />
       <ProblemSection />
