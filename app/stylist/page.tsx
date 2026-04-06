@@ -3,6 +3,8 @@ import ProblemSection from "@/components/stylist/ProblemSection";
 import FeaturesSection from "@/components/stylist/FeaturesSection";
 import FaqSection from "@/components/stylist/FaqSection";
 import CtaSection from "@/components/stylist/CtaSection";
+import MetaPixel from "@/components/MetaPixel";
+import { Analytics } from "@vercel/analytics/react";
 import { createAdminClient } from "@/lib/supabase";
 
 async function getWaitlistCount(): Promise<number> {
@@ -25,6 +27,8 @@ export default async function StylistPage() {
 
   return (
     <main>
+      <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID!} />
+      <Analytics />
       <HeroSection waitlistCount={waitlistCount} />
       <ProblemSection />
       <FeaturesSection />

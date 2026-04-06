@@ -17,15 +17,14 @@ export default function HeroSection({ waitlistCount }: HeroSectionProps) {
 
         {/* 헤드라인 */}
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-4">
-          우리 아이 유치원<br />
-          <span className="text-yellow-500">정보 혼자 찾지 마세요</span>
+          유아교육 선생님들의<br />
+          <span className="text-yellow-500">모든 것이 여기 있어요</span>
         </h1>
 
         {/* 서브헤드 */}
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
-          같은 유치원 학부모끼리 솔직한 정보를 나누는 커뮤니티.<br className="hidden sm:block" />
-          입학 준비부터 원비, 선생님 평판까지<br className="hidden sm:block" />
-          아는 사람만 알던 정보를 이제 함께 공유해요.
+          구인구직부터 수업자료 공유, 선생님들끼리의 솔직한 소통까지.<br className="hidden sm:block" />
+          유치원·어린이집 선생님이라면 꼭 필요한 커뮤니티입니다.
         </p>
 
         {/* 사전등록 폼 */}
@@ -38,7 +37,7 @@ export default function HeroSection({ waitlistCount }: HeroSectionProps) {
 
         {/* 신뢰 요소 */}
         <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-          {["완전 무료", "익명 보장", "언제든 취소 가능"].map((item) => (
+          {["완전 무료", "선생님 전용", "언제든 취소 가능"].map((item) => (
             <span key={item} className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />

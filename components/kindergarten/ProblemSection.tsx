@@ -1,18 +1,18 @@
 const problems = [
   {
-    emoji: "😰",
-    title: "입학 준비, 뭘 챙겨야 할지 모르겠어요",
-    desc: "준비물 목록, 입학 전 체크리스트, 적응 기간 팁... 처음이라 아무것도 모르는데 물어볼 곳이 없어요.",
+    emoji: "😔",
+    title: "구인구직 정보가 너무 흩어져 있어요",
+    desc: "채용공고는 이 사이트, 구직은 저 카페, 연락은 또 따로... 유치원·어린이집 일자리 정보를 한곳에서 볼 수 없어요.",
   },
   {
     emoji: "🤐",
-    title: "원비가 적당한 건지 비교할 수가 없어요",
-    desc: "다른 유치원은 얼마인지, 특별활동비가 과한 건지 알 방법이 없어요. 눈치만 보다가 그냥 냅니다.",
+    title: "선생님끼리 솔직하게 얘기할 공간이 없어요",
+    desc: "원장님 눈치, 동료 눈치... 현장의 고민을 털어놓을 수 있는 선생님 전용 익명 공간이 필요해요.",
   },
   {
-    emoji: "😤",
-    title: "학부모 단톡방엔 눈치 보여서 못 물어봐요",
-    desc: "정말 궁금한 건 선생님 평판, 원 운영 방식인데... 단톡방에선 절대 못 물어보잖아요.",
+    emoji: "😩",
+    title: "수업자료 매번 처음부터 만들기 지쳐요",
+    desc: "누리과정 자료, 계절별 활동지, 부모 안내문... 잘 만들어진 자료가 있어도 공유할 방법이 없어요.",
   },
 ];
 
@@ -22,7 +22,7 @@ export default function ProblemSection() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-sm font-semibold text-orange-500 uppercase tracking-wide mb-2">
-            학부모들의 공통 고민
+            선생님들의 공통 고민
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
             이런 경험, 있지 않으신가요?

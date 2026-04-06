@@ -1,20 +1,12 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
 
 interface MetaPixelProps {
   pixelId: string;
 }
 
 export default function MetaPixel({ pixelId }: MetaPixelProps) {
-  useEffect(() => {
-    // PageView 이벤트: 클라이언트 사이드 네비게이션 시 중복 방지
-    if (typeof window !== "undefined" && (window as Window & { fbq?: (...args: unknown[]) => void }).fbq) {
-      (window as Window & { fbq?: (...args: unknown[]) => void }).fbq!("track", "PageView");
-    }
-  }, []);
-
   return (
     <>
       <Script
@@ -35,17 +27,6 @@ export default function MetaPixel({ pixelId }: MetaPixelProps) {
           `,
         }}
       />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <noscript>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          height="1"
-          width="1"
-          style={{ display: "none" }}
-          src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
-          alt=""
-        />
-      </noscript>
     </>
   );
 }

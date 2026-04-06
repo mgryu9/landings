@@ -8,13 +8,13 @@ import CtaSection from "@/components/kindergarten/CtaSection";
 import { createAdminClient } from "@/lib/supabase";
 
 export const metadata = {
-  title: "키즈커넥트 - 유치원 학부모 커뮤니티",
+  title: "키즈커넥트 - 유치원·어린이집 선생님 커뮤니티",
   description:
-    "입학 준비부터 원비, 선생님 평판까지. 같은 유치원 학부모끼리 솔직한 정보를 나누는 커뮤니티.",
+    "구인구직부터 수업자료 공유, 선생님끼리 솔직한 소통까지. 유아교육 선생님들의 커뮤니티.",
   openGraph: {
-    title: "키즈커넥트 - 유치원 학부모 커뮤니티",
+    title: "키즈커넥트 - 유치원·어린이집 선생님 커뮤니티",
     description:
-      "입학 준비부터 원비, 선생님 평판까지. 같은 유치원 학부모끼리 솔직한 정보를 나누는 커뮤니티.",
+      "구인구직부터 수업자료 공유, 선생님끼리 솔직한 소통까지. 유아교육 선생님들의 커뮤니티.",
     type: "website",
   },
 };
@@ -39,7 +39,7 @@ export default async function KindergartenPage() {
 
   return (
     <main>
-      <MetaPixel pixelId="2035747486985063" />
+      <MetaPixel pixelId="1523494972728904" />
       <Analytics />
 
       {/* 헤더 */}
@@ -68,7 +68,7 @@ export default async function KindergartenPage() {
       {/* 푸터 */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
         <p className="font-semibold text-white mb-1">키즈커넥트</p>
-        <p>유치원 학부모 커뮤니티</p>
+        <p>유치원·어린이집 선생님 커뮤니티</p>
         <p className="mt-3">
           문의:{" "}
           <a
