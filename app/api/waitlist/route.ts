@@ -121,6 +121,11 @@ export async function POST(request: NextRequest) {
         description: "청약 당첨 전략 커뮤니티",
         color: "#059669",
       },
+      kindergarten: {
+        name: "키즈커넥트",
+        description: "유치원 학부모 커뮤니티",
+        color: "#eab308",
+      },
     };
 
     const config = projectConfig[project] ?? {
